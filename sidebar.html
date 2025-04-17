@@ -1,0 +1,54 @@
+<!--Nav-->
+
+<div class="bg-blue-100 p-4 w-60 overflow-y-auto" x-data="{ openGameArea: false }">
+    <div class="mb-8 text-base font-bold text-blue-800">GTU Core</div>
+    <nav class="space-y-3">
+      <a href="home.php" class="block text-blue-700 hover:text-blue-900">Home</a>
+      <a href="employee.php" class="block text-blue-700 hover:text-blue-900">Employee Directory</a>
+      
+      <!-- Game Area Main Toggle -->
+      <button @click="openGameArea = !openGameArea" class="w-full text-left text-blue-700 hover:text-blue-900 focus:outline-none">
+        Game Area
+      </button>
+  
+      <!-- Sub-links under Game Area -->
+      <div class="ml-4 space-y-2 mt-1 text-sm" x-show="openGameArea" x-collapse>
+        <a href="game-catalog.html" class="block text-blue-700 hover:text-blue-900">Game Catalog</a>
+        <a href="game-engine.html" class="block text-blue-700 hover:text-blue-900">Game Engine</a>
+        
+        <hr class="border-gray-300 my-2">
+  
+        <a href="branding-guidelines.html" class="block text-blue-700 hover:text-blue-900">Branding Guidelines</a>
+        <a href="ui-ux-standards.html" class="block text-blue-700 hover:text-blue-900">UI/UX Standards</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="engine-tooling.html" class="block text-blue-700 hover:text-blue-900">Engine Tooling</a>
+        <a href="combu-docs.html" class="block text-blue-700 hover:text-blue-900">Combu Documentation</a>
+        <a href="storage.html" class="block text-blue-700 hover:text-blue-900">Storage</a>
+        <a href="version-control.html" class="block text-blue-700 hover:text-blue-900">Version Control</a>
+        <a href="maintenance.html" class="block text-blue-700 hover:text-blue-900">Maintenance</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="project-management.html" class="block text-blue-700 hover:text-blue-900">Project Management</a>
+        <a href="gtu-timeline.html" class="block text-blue-700 hover:text-blue-900">GTU Timeline</a>
+        <a href="gtu-tracker.html" class="block text-blue-700 hover:text-blue-900">GTU Tracker</a>
+        <a href="gtu-test-sheet.html" class="block text-blue-700 hover:text-blue-900">GTU Test Sheet</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="packages.html" class="block text-blue-700 hover:text-blue-900">Packages</a>
+        <a href="clients.html" class="block text-blue-700 hover:text-blue-900">Clients</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="support-guidelines.html" class="block text-blue-700 hover:text-blue-900">Customer Support Guidelines</a>
+        <a href="community-engagement.html" class="block text-blue-700 hover:text-blue-900">Community Engagement</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="legal.html" class="block text-blue-700 hover:text-blue-900">Legal</a>
+      </div>
+    </nav>
+  </div>
