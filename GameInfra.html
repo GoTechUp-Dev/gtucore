@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-white h-screen flex text-xs md:text-sm">
+
+  <!--Nav-->
+  <div class="bg-blue-100 p-4 w-60 overflow-y-auto" x-data="{ openGameArea: false }">
+    <div class="mb-8 text-base font-bold text-blue-800">GTU Core</div>
+    <nav class="space-y-3">
+      <a href="home.html" class="block text-blue-700 hover:text-blue-900">Home</a>
+      <a href="employee.html" class="block text-blue-700 hover:text-blue-900">Employee Directory</a>
+      
+      <!-- Game Area Main Toggle -->
+      <button @click="openGameArea = !openGameArea" class="w-full text-left text-blue-700 hover:text-blue-900 focus:outline-none">
+        Game Area
+      </button>
+  
+      <!-- Sub-links under Game Area -->
+      <div class="ml-4 space-y-2 mt-1 text-sm" x-show="openGameArea" x-collapse>
+        <a href="catalog.html" class="block text-blue-700 hover:text-blue-900">Game Catalog</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Game Engine</a>
+        
+        <hr class="border-gray-300 my-2">
+  
+        <a href="branding.html" class="block text-blue-700 hover:text-blue-900">Branding Guidelines</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">UI/UX Standards</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="GameInfra.html" class="block text-blue-700 hover:text-blue-900">Game Infrastructure</a>
+        <a href="GameArch.html" class="block text-blue-700 hover:text-blue-900">Game Architecture</a>
+        <a href="combu-docs.html" class="block text-blue-700 hover:text-blue-900">Combu Documentation</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Version Control</a>
+        <a href="maintenance.html" class="block text-blue-700 hover:text-blue-900">Maintenance</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Project Management</a>
+        <a href="gtu-timeline.html" class="block text-blue-700 hover:text-blue-900">GTU Timeline</a>
+        <a href="gtu-tracker.html" class="block text-blue-700 hover:text-blue-900">GTU Tracker</a>
+        <a href="gtu-test-sheet.html" class="block text-blue-700 hover:text-blue-900">GTU Test Sheet</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Packages</a>
+        <a href="clients.html" class="block text-blue-700 hover:text-blue-900">Clients</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="support-guidelines.html" class="block text-blue-700 hover:text-blue-900">Customer Support Guidelines</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Community Engagement</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Legal</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6 space-y-12 overflow-y-auto bg-gray-50">
+
+    <div class="max-w-5xl mx-auto px-6 py-10 space-y-10">
+        <header>
+            <h1 style="color: #1A73E8;">IT Architecture & Tools</h1>
+            <p>GoTechUp's IT architecture leverages cutting-edge technologies to ensure a smooth, scalable, and efficient game development and deployment process. Below is an overview of the core systems used within GoTechUp, including their functions and installation steps.</p>
+        </header>
+        
+        <section>
+            <h2 style="color: #34A853;">1. Unity 6</h2>
+            <h3 style="color: #1A73E8;">Overview</h3>
+            <p>Unity 6 is the game engine used for developing GoTechUp’s interactive simulations. It is a powerful, cross-platform engine that integrates various game elements, such as graphics, physics, and interactions, to provide an immersive experience.</p>
+            
+            <h3 style="color: #1A73E8;">Function</h3>
+            <p>
+                - Handles the rendering, real-time physics, and multiplayer interactions.<br>
+                - Used for building, testing, and deploying GoTechUp’s simulation games.
+            </p>
+            
+            <h3 style="color: #1A73E8;">Installation Steps</h3>
+            <p>
+                1. Download Unity Hub from the Unity website.<br>
+                2. Sign in or create a Unity account.<br>
+                3. Go to the 'Installs' tab in Unity Hub and click the 'Add' button.<br>
+                4. Select Unity 6 from the available versions.<br>
+                5. Install additional modules based on your platform (e.g., Windows, Mac, WebGL).
+            </p>
+        </section>
+
+        <section>
+            <h2 style="color: #34A853;">2. Plastic SCM</h2>
+            <h3 style="color: #1A73E8;">Overview</h3>
+            <p>Plastic SCM is a version control system (VCS) that helps manage and track changes in the game’s source code and assets. It supports branching, merging, and team collaboration for smoother version management.</p>
+            
+            <h3 style="color: #1A73E8;">Function</h3>
+            <p>
+                - Manages game source code and assets.<br>
+                - Enables multiple developers to work simultaneously without overwriting each other’s work.<br>
+                - Allows rollback to previous game versions when necessary.
+            </p>
+            
+            <h3 style="color: #1A73E8;">Installation Steps</h3>
+            <p>
+                1. Download the installer from the Plastic SCM website.<br>
+                2. Run the installer and follow the on-screen instructions.<br>
+                3. Sign in to Plastic SCM and set up or connect to a repository.
+            </p>
+        </section>
+
+        <section>
+            <h2 style="color: #34A853;">3. Combu</h2>
+            <h3 style="color: #1A73E8;">Overview</h3>
+            <p>Combu is an advanced tool for compressing and optimizing game assets. It ensures media files are compressed efficiently, optimizing both performance and storage.</p>
+            
+            <h3 style="color: #1A73E8;">Function</h3>
+            <p>
+                - Compresses textures, models, and game assets.<br>
+                - Reduces overall file size while maintaining high quality.<br>
+                - Improves game load times and reduces storage requirements.
+            </p>
+            
+            <h3 style="color: #1A73E8;">Installation Steps</h3>
+            <p>
+                1. Download Combu from the official website.<br>
+                2. Follow the installation wizard to install the software.<br>
+                3. Launch Combu and configure the settings based on GoTechUp’s project needs.
+            </p>
+        </section>
+
+        <section>
+            <h2 style="color: #34A853;">4. AWS Server</h2>
+            <h3 style="color: #1A73E8;">Overview</h3>
+            <p>Amazon Web Services (AWS) provides the cloud infrastructure for GoTechUp’s multiplayer and backend services. AWS supports hosting servers, managing databases, and scaling game infrastructure as needed.</p>
+            
+            <h3 style="color: #1A73E8;">Function</h3>
+            <p>
+                - Scales servers to meet demand for seamless multiplayer experiences.<br>
+                - Provides cloud storage, compute power, and data analytics.<br>
+                - Manages user data and game functions efficiently.
+            </p>
+            
+            <h3 style="color: #1A73E8;">Setup Steps</h3>
+            <p>
+                1. Create an AWS account on the AWS Registration Page.<br>
+                2. Access the AWS Management Console after setting up your account.<br>
+                3. Select necessary AWS services (e.g., EC2 for servers, S3 for storage, RDS for databases).<br>
+                4. Follow the instructions to configure and deploy your game services.
+            </p>
+        </section>
+
+        <section>
+            <h2 style="color: #34A853;">5. Adminer PHP</h2>
+            <h3 style="color: #1A73E8;">Overview</h3>
+            <p>Adminer PHP is a lightweight database management tool with a web interface for managing SQL databases, including MySQL, PostgreSQL, and SQLite.</p>
+            
+            <h3 style="color: #1A73E8;">Function</h3>
+            <p>
+                - Used to perform operations such as data retrieval, insertion, and schema modifications.<br>
+                - Provides an easy-to-use interface for database management.
+            </p>
+            
+            <h3 style="color: #1A73E8;">Installation Steps</h3>
+            <p>
+                1. Download Adminer from the official website.<br>
+                2. Upload the PHP file to your server (no installation required).<br>
+                3. Access Adminer via a web browser (e.g., `http://yourdomain/adminer.php`).<br>
+                4. Log in with your database credentials to manage your databases.
+            </p>
+        </section>
+
+        <section>
+            <h2 style="color: #34A853;">GoTechUp Involvment</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Tool</th>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Function</th>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Connection to GoTechUp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Unity 6</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Game engine for creating simulations and interactive content.</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Handles rendering, physics, and multiplayer interactions for games.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Plastic SCM</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Version control for managing code and asset changes.</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Tracks and manages changes in game assets and source code.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Combu</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Asset compression and optimization tool.</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Optimizes game assets to improve performance and reduce storage.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">AWS Server</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Cloud infrastructure for hosting, scaling, and managing game services.</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Supports multiplayer functionality, cloud storage, and database management.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Adminer PHP</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Web-based database management tool for backend operations.</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Manages backend databases to handle game data and player information.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+    </div>
+
+
+
+  </main>
+</body>
+</html>

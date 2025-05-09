@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-white h-screen flex text-xs md:text-sm">
+
+ <!--Nav-->
+ <div class="bg-blue-100 p-4 w-60 overflow-y-auto" x-data="{ openGameArea: false }">
+  <div class="mb-8 text-base font-bold text-blue-800">GTU Core</div>
+  <nav class="space-y-3">
+    <a href="home.html" class="block text-blue-700 hover:text-blue-900">Home</a>
+    <a href="employee.html" class="block text-blue-700 hover:text-blue-900">Employee Directory</a>
+    
+    <!-- Game Area Main Toggle -->
+    <button @click="openGameArea = !openGameArea" class="w-full text-left text-blue-700 hover:text-blue-900 focus:outline-none">
+      Game Area
+    </button>
+
+    <!-- Sub-links under Game Area -->
+    <div class="ml-4 space-y-2 mt-1 text-sm" x-show="openGameArea" x-collapse>
+      <a href="catalog.html" class="block text-blue-700 hover:text-blue-900">Game Catalog</a>
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Game Engine</a>
+      
+      <hr class="border-gray-300 my-2">
+
+      <a href="branding.html" class="block text-blue-700 hover:text-blue-900">Branding Guidelines</a>
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">UI/UX Standards</a>
+
+      <hr class="border-gray-300 my-2">
+
+      <a href="GameInfra.html" class="block text-blue-700 hover:text-blue-900">Game Infrastructure</a>
+      <a href="GameArch.html" class="block text-blue-700 hover:text-blue-900">Game Architecture</a>
+      <a href="combu-docs.html" class="block text-blue-700 hover:text-blue-900">Combu Documentation</a>
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Version Control</a>
+      <a href="maintenance.html" class="block text-blue-700 hover:text-blue-900">Maintenance</a>
+
+      <hr class="border-gray-300 my-2">
+
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Project Management</a>
+      <a href="gtu-timeline.html" class="block text-blue-700 hover:text-blue-900">GTU Timeline</a>
+      <a href="gtu-tracker.html" class="block text-blue-700 hover:text-blue-900">GTU Tracker</a>
+      <a href="gtu-test-sheet.html" class="block text-blue-700 hover:text-blue-900">GTU Test Sheet</a>
+
+      <hr class="border-gray-300 my-2">
+
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Packages</a>
+      <a href="clients.html" class="block text-blue-700 hover:text-blue-900">Clients</a>
+
+      <hr class="border-gray-300 my-2">
+
+      <a href="support-guidelines.html" class="block text-blue-700 hover:text-blue-900">Customer Support Guidelines</a>
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Community Engagement</a>
+
+      <hr class="border-gray-300 my-2">
+
+      <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Legal</a>
+    </div>
+  </nav>
+</div>
+
+  <!-- Main Content -->
+  <main class="bg-white py-6 px-4 lg:px-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">🎮 Game Development Dashboard</h2>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+  
+      <!-- URC 2025 SDG11 -->
+      <a href="urc2025.html" class="block bg-blue-50 border border-blue-200 rounded-lg p-4 hover:bg-blue-100 transition">
+        <h3 class="font-semibold text-lg text-blue-900">🏆 URC 2025 SDG11</h3>
+        <p class="text-sm text-gray-700">Status: <span class="font-medium">In Development</span></p>
+        <p class="text-sm text-gray-700">Link: URC 2025 Draft, URC 2025 TechUp Drive</p>
+        <p class="text-sm text-yellow-600">Priority: ⭐⭐⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- RP DEMO -->
+      <a href="http://e112.go-techup.com/" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🧪 RP DEMO</h3>
+        <p class="text-sm text-gray-700">Status: <span class="font-medium">Active</span></p>
+        <p class="text-sm text-gray-700">Links: e112, e261</p>
+        <p class="text-sm text-yellow-600">Priority: ⭐⭐⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- GoTechUp4School v2.0 -->
+      <a href="https://www.gotechup4school.com" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🚀 GoTechUp4School v2.0</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: gotechup4school.com</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: Japan Middle School Table Compatibility</p>
+      </a>
+  
+      <!-- QuestUp -->
+      <a href="https://go-techup.com/questup" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🎯 QuestUp</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: questup</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: Level 8–10 finishing</p>
+      </a>
+  
+      <!-- GTU ArtecRobo Junior -->
+      <a href="https://junior.go-techup.com/" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🤖 GTU ArtecRobo Junior</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: Mongolia Project</p>
+      </a>
+  
+      <!-- GoTechUp4School v1.0 -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🧠 GoTechUp4School v1.0</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: Middle School Package</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- Changi Healthcare Robotic System -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏥 Changi Healthcare Robotic System</h3>
+        <p class="text-sm text-gray-700">Status: Planning</p>
+        <p class="text-sm text-gray-700">Link: -</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- GTU Sustainability Game -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🌱 GTU Sustainability Game</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: -</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- GTU Junior -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">👦 GTU Junior</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: -</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- Discover Malaysia -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🌍 Discover Malaysia</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Link: (Lost file)</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- URC 2024 (Current URC Game) -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏆 URC 2024 (Current URC Game)</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Links: URC2024, URC 2024 TechUp Drive</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- URC 2023 -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏆 URC 2023</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Links: URC2023, URC 2023 TechUp Drive</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- URC 2022 -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏆 URC 2022</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Links: URC2022, URC 2022 TechUp Drive</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- URC 2021 -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏆 URC 2021</h3>
+        <p class="text-sm text-gray-700">Status: Active</p>
+        <p class="text-sm text-gray-700">Links: URC2021, URC 2021 TechUp Drive</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+      <!-- URC 2020 -->
+      <a href="#" class="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">🏆 URC 2020</h3>
+        <p class="text-sm text-gray-700">Status: Paused</p>
+        <p class="text-sm text-gray-700">Links: URC2020, URC 2020 TechUp Drive</p>
+        <p class="text-sm text-yellow-500">Priority: ⭐</p>
+        <p class="text-xs text-gray-600 mt-2">Next: -</p>
+      </a>
+  
+    </div>
+  </main>
+  
+  
+</body>
+</html>

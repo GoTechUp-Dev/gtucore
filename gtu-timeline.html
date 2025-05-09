@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory - GTU Core</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <body class="bg-white h-screen flex text-xs md:text-sm">
+
+  <!--Nav-->
+  <div class="bg-blue-100 p-4 w-60 overflow-y-auto" x-data="{ openGameArea: false }">
+    <div class="mb-8 text-base font-bold text-blue-800">GTU Core</div>
+    <nav class="space-y-3">
+      <a href="home.html" class="block text-blue-700 hover:text-blue-900">Home</a>
+      <a href="employee.html" class="block text-blue-700 hover:text-blue-900">Employee Directory</a>
+      
+      <!-- Game Area Main Toggle -->
+      <button @click="openGameArea = !openGameArea" class="w-full text-left text-blue-700 hover:text-blue-900 focus:outline-none">
+        Game Area
+      </button>
+  
+      <!-- Sub-links under Game Area -->
+      <div class="ml-4 space-y-2 mt-1 text-sm" x-show="openGameArea" x-collapse>
+        <a href="catalog.html" class="block text-blue-700 hover:text-blue-900">Game Catalog</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Game Engine</a>
+        
+        <hr class="border-gray-300 my-2">
+  
+        <a href="branding.html" class="block text-blue-700 hover:text-blue-900">Branding Guidelines</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">UI/UX Standards</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="GameInfra.html" class="block text-blue-700 hover:text-blue-900">Game Infrastructure</a>
+        <a href="GameArch.html" class="block text-blue-700 hover:text-blue-900">Game Architecture</a>
+        <a href="combu-docs.html" class="block text-blue-700 hover:text-blue-900">Combu Documentation</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Version Control</a>
+        <a href="maintenance.html" class="block text-blue-700 hover:text-blue-900">Maintenance</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Project Management</a>
+        <a href="gtu-timeline.html" class="block text-blue-700 hover:text-blue-900">GTU Timeline</a>
+        <a href="gtu-tracker.html" class="block text-blue-700 hover:text-blue-900">GTU Tracker</a>
+        <a href="gtu-test-sheet.html" class="block text-blue-700 hover:text-blue-900">GTU Test Sheet</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Packages</a>
+        <a href="clients.html" class="block text-blue-700 hover:text-blue-900">Clients</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="support-guidelines.html" class="block text-blue-700 hover:text-blue-900">Customer Support Guidelines</a>
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Community Engagement</a>
+  
+        <hr class="border-gray-300 my-2">
+  
+        <a href="progress.html" class="block text-blue-700 hover:text-blue-900">Legal</a>
+      </div>
+    </nav>
+  </div>
+
+    <!-- Main content -->
+    <main class="relative h-screen w-full overflow-hidden bg-gray-50">
+        <iframe 
+          class="absolute inset-0 w-full h-full border-0"
+          src="https://docs.google.com/spreadsheets/d/1Rr4ifKG0RaxPTW8b4dLRojaly-Q5nYbdyLeSk4oMusM/edit?usp=sharing"
+          allowfullscreen>
+        </iframe>
+      </main>
+      
+      
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-white h-screen flex text-xs md:text-sm">
+
+  <!-- Sidebar -->
+  <div class="bg-blue-100 p-4 w-60 h-screen overflow-y-auto" x-data="{ openGameArea: true }">
+    <div class="mb-8 text-base font-bold text-blue-800">GTU Core</div>
+    <nav class="space-y-3">
+      <a href="home.html" class="block text-blue-700 hover:text-blue-900">Home</a>
+      <a href="employee.html" class="block text-blue-700 hover:text-blue-900">Employee Directory</a>
+
+      <button @click="openGameArea = !openGameArea" class="w-full text-left text-blue-700 hover:text-blue-900 focus:outline-none">
+        Game Area
+      </button>
+
+      <div class="ml-4 space-y-2 mt-1 text-sm" x-show="openGameArea">
+        <a href="catalog.html" class="block text-blue-700 hover:text-blue-900">Game Catalog</a>
+        <a href="game-engine.html" class="block text-blue-700 hover:text-blue-900">Game Engine</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="branding-guidelines.html" class="block text-blue-700 hover:text-blue-900">Branding Guidelines</a>
+        <a href="ui-ux-standards.html" class="block text-blue-700 hover:text-blue-900">UI/UX Standards</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="engine-tooling.html" class="block text-blue-700 hover:text-blue-900">Engine Tooling</a>
+        <a href="combu-docs.html" class="block text-blue-700 hover:text-blue-900">Combu Documentation</a>
+        <a href="storage.html" class="block text-blue-700 hover:text-blue-900">Storage</a>
+        <a href="version-control.html" class="block text-blue-700 hover:text-blue-900">Version Control</a>
+        <a href="maintenance.html" class="block text-blue-700 hover:text-blue-900">Maintenance</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="project-management.html" class="block text-blue-700 hover:text-blue-900">Project Management</a>
+        <a href="gtu-timeline.html" class="block text-blue-700 hover:text-blue-900">GTU Timeline</a>
+        <a href="gtu-tracker.html" class="block text-blue-700 hover:text-blue-900">GTU Tracker</a>
+        <a href="gtu-test-sheet.html" class="block text-blue-700 hover:text-blue-900">GTU Test Sheet</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="packages.html" class="block text-blue-700 hover:text-blue-900">Packages</a>
+        <a href="clients.html" class="block text-blue-700 hover:text-blue-900">Clients</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="support-guidelines.html" class="block text-blue-700 hover:text-blue-900">Customer Support Guidelines</a>
+        <a href="community-engagement.html" class="block text-blue-700 hover:text-blue-900">Community Engagement</a>
+
+        <hr class="border-gray-300 my-2">
+        <a href="legal.html" class="block text-blue-700 hover:text-blue-900">Legal</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6 space-y-12 overflow-y-auto bg-gray-50">
+
+        <div class="max-w-5xl mx-auto px-6 py-10 space-y-10">
+          <header class="text-center">
+            <h1 class="text-3xl font-bold text-blue-600">📘 Combu Documentation</h1>
+            <p class="text-gray-700 mt-2">Browse the documentation pages related to Combu for asset compression, optimization, and integration within GoTechUp.</p>
+          </header>
+      
+          <section>
+            <table class="min-w-full border border-gray-300 divide-y divide-gray-200">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="px-6 py-3 text-left text-sm font-medium text-gray-700">Title</th>
+                  <th class="px-6 py-3 text-left text-sm font-medium text-gray-700">Description</th>
+                  <th class="px-6 py-3 text-right text-sm font-medium text-gray-700">Link</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm font-semibold text-gray-800">Getting Started with Combu</td>
+                  <td class="px-6 py-4 text-sm text-gray-600">Basic setup and installation guide to integrate Combu into your Unity project.</td>
+                  <td class="px-6 py-4 text-right">
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded transition">View Docs</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-semibold text-gray-800">Combu Asset Optimization</td>
+                  <td class="px-6 py-4 text-sm text-gray-600">Learn how Combu compresses and optimizes assets to improve performance.</td>
+                  <td class="px-6 py-4 text-right">
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded transition">View Docs</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-semibold text-gray-800">Combu Troubleshooting</td>
+                  <td class="px-6 py-4 text-sm text-gray-600">Solutions for common issues when using Combu in a game development workflow.</td>
+                  <td class="px-6 py-4 text-right">
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded transition">View Docs</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+ 
+
+
+  </main>
+</body>
+</html>
